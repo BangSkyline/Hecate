@@ -1,9 +1,10 @@
-# Plateforme de Résilience Climatique
-Une plateforme moderne dédiée à l'analyse de la résilience climatique et à la santé des sols, développée avec Next.js et React.
+# Hécate
+Une web app pour documenter le travail de Cosmos.Corp dans l'integrations des technologies prédictives et de ML pour l'agriculture. Développée avec Next.js et React.
+![Hécate Banner](public/wheatfield.png)
 
 ---
 
-## 🚀 Fonctionnalités
+## 🚀 Points abordés
 - **Analyse de résilience climatique**
 - Évaluation des scores de résilience en temps réel
 - **Monitoring de la santé des sols**
@@ -47,7 +48,7 @@ npm run dev
 # ou
 yarn dev
 ```
-Ouvrez http://localhost:3000 dans votre navigateur pour voir le résultat.
+Ouvrez http://localhost:3000 dans votre navigateur.
 
 Build de production :
 ```bash
@@ -62,10 +63,11 @@ yarn build
 ```bash
 #Construction de l’image Docker
 docker build -t name:version .
-#Exécution du conteneur
-docker run -p 3000:3000 name:version
 ```
-L’application sera accessible sur http://localhost:3000
+### 🐳 Exécution du conteneur avec Docker Compose
+
+Compose founit et modifiable
+L’application sera accessible sur l'ip du conteneur.
 
 ---
 
@@ -75,18 +77,18 @@ L’application sera accessible sur http://localhost:3000
 │   ├── page.tsx           # Page d'accueil
 │   └── globals.css        # Styles globaux
 ├── components/            # Composants réutilisables
-│   ├── Header.tsx         # En-tête de navigation
-│   ├── HeroSection.tsx    # Section hero avec cartes
-│   ├── MissionSection.tsx # Section mission
-│   ├── PartnersSection.tsx# Section partenaires
-│   ├── SolutionsSection.tsx# Section solutions
-│   ├── BenchmarkSection.tsx# Section benchmarks
-│   ├── PlatformSection.tsx# Section plateforme
-│   ├── ScienceSection.tsx # Section science
-│   ├── ScoreCard.tsx      # Carte de score
-│   ├── SoilHealthCard.tsx # Carte santé des sols
-│   └── PredictionCard.tsx # Carte prédictions IA
-├── public/               # Fichiers statiques
+│   ├── Header.tsx         
+│   ├── HeroSection.tsx    
+│   ├── MissionSection.tsx 
+│   ├── PartnersSection.tsx# 
+│   ├── SolutionsSection.tsx
+│   ├── BenchmarkSection.tsx
+│   ├── PlatformSection.tsx
+│   ├── ScienceSection.tsx 
+│   ├── ScoreCard.tsx      
+│   ├── SoilHealthCard.tsx 
+│   └── PredictionCard.tsx
+├── public/               # Images statiques
 ├── package.json          # Dépendances et scripts
 └── README.md            # Documentation du projet
 
@@ -106,6 +108,7 @@ Les données de démonstration sont directement intégrées dans les composants 
 ---
 
 ## 🔧 Scripts disponibles :
+
 ```bash
 npm run dev
 Démarrage en mode développement
@@ -114,13 +117,6 @@ Construction pour la production
 npm run lint
 Vérification du code avec ESLint
 ```
-
----
-
-### 📈 Métriques affichées
-Score de résilience : 6.5/10
-Santé des sols : 74% en bonne santé
-Précision IA : 94% de précision des prédictions
 
 ---
 
