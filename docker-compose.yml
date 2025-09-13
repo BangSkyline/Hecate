@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+   hecate:
+    image: hecate:V1
+    container_name: Hecate
+    restart: unless-stopped
+    networks:
+      cosmos:
+        ipv4_address: 192.168.95.62
+
+networks:
+  cosmos:
+    external: true
+    name: cosmos
