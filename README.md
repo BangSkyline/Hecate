@@ -1,5 +1,9 @@
 # Hécate
+
+Online preview : https://hecate-flame.vercel.app/
+
 Une web app pour documenter le travail de Cosmos.Corp dans l'integrations des technologies prédictives et de ML pour l'agriculture. Développée avec Next.js et React.
+
 ![Hécate Banner](public/wheatfield.png)
 
 ---
